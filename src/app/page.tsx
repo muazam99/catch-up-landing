@@ -16,10 +16,7 @@ export default function Home() {
   };
 
   const handleGooglePlayClick = () => {
-    toast('Coming Soon! Stay tuned.', {
-      icon: '📱',
-      duration: 3000,
-    });
+    window.open('https://play.google.com/store/apps/details?id=com.catchupmobility.catchupapp', '_blank');
   };
   return (
     <div className="min-h-screen bg-white">

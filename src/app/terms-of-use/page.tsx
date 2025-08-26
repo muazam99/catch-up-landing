@@ -12,12 +12,12 @@ export default function TermsOfUse() {
           <Link href="/" className="flex items-center gap-3">
             <Image
               src="/app-icon.png"
-              alt="Tadabbur AI"
+              alt="Catch Up Mobility"
               width={50}
               height={50}
               className="rounded-lg"
             />
-            <span className="text-xl font-semibold text-black">Tadabbur AI</span>
+            <span className="text-xl font-semibold text-black">Catch Up</span>
           </Link>
         </header>
       </FadeInSection>
@@ -25,24 +25,17 @@ export default function TermsOfUse() {
       <main className="max-w-4xl mx-auto px-6 py-12">
         <FadeInSection delay={0.4}>
           <h1 className="text-4xl font-bold text-black mb-4">Terms of Use</h1>
-          <div className="text-gray-600 mb-8 space-y-1">
-            <p><strong>Last updated:</strong> August 18, 2025</p>
+          <div className="text-gray-600 mb-8">
+            <p><strong>Last updated:</strong> 17-August-2025</p>
           </div>
         </FadeInSection>
 
         <div className="prose max-w-none">
           <FadeInSection delay={0.6}>
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-black mb-4">Respect for Privacy and Confidentiality</h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  Users are prohibited from recording or sharing sensitive conversations or information that would violate U.S. privacy laws. This includes confidential communications, private discussions, or any other exchanges legally protected from unauthorized disclosure.
-                </p>
-                <p>
-                  Tadabbur AI does not condone and cannot be held liable for any unauthorized uploading of content that violates institutional policies, copyright law, or privacy laws. Users are fully responsible for ensuring their activities on the platform comply with all applicable legal and institutional requirements.
-                </p>
-                <p>
-                  By using our platform, you agree to indemnify Tadabbur AI against any legal consequences resulting from the unauthorized distribution of material. We trust our users to respect intellectual property, privacy, and institutional policies while using Tadabbur AI.
+                  Welcome to Catch Up Mobility (&quot;App&quot;, &quot;we&quot;, &quot;our&quot;, &quot;us&quot;). By downloading, accessing, or using our App, you agree to be bound by these Terms of Use. If you do not agree, please do not use the App.
                 </p>
               </div>
             </section>
@@ -50,16 +43,13 @@ export default function TermsOfUse() {
 
           <FadeInSection delay={0.7}>
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-black mb-4">License to View Tadabbur AI Content</h2>
+              <h2 className="text-2xl font-semibold text-black mb-4">Use of the App</h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  Provided you comply with these Terms of Use, Tadabbur AI grants you a limited, personal, non-exclusive, non-commercial, revocable, and non-transferable license to access and use the content on our platform. This is strictly for personal, non-commercial, educational use.
+                  The App is provided for personal, non-commercial use only.
                 </p>
                 <p>
-                  You agree not to copy, or access content via automated means (e.g., scripts, bots, or data extraction tools) unless authorized by Tadabbur AI.
-                </p>
-                <p>
-                  If you purchase a subscription or license to access Tadabbur content, it is for individual use only and cannot be shared with others. We may enforce reasonable limits on access to protect against unauthorized use, including limits on time, device usage, or the quantity of materials accessed.
+                  You agree not to misuse the App, attempt to disrupt its functionality, or use it for unlawful purposes.
                 </p>
               </div>
             </section>
@@ -67,7 +57,74 @@ export default function TermsOfUse() {
 
           <FadeInSection delay={0.8}>
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-black mb-4">Refund Policy for Tadabbur AI</h2>
+              <h2 className="text-2xl font-semibold text-black mb-4">Accounts & Data</h2>
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p>
+                  Some features may require creating an account. You are responsible for keeping your login details secure.
+                </p>
+                <p>
+                  You agree to provide accurate and up-to-date information.
+                </p>
+              </div>
+            </section>
+          </FadeInSection>
+
+          <FadeInSection delay={0.9}>
+            <section className="mb-8">
+              <h2 className="text-2xl font-semibold text-black mb-4">Transportation Information</h2>
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p>
+                  The App provides navigation, station, and route information to assist your travel.
+                </p>
+                <p>
+                  While we strive to provide accurate and timely information, we cannot guarantee that schedules, delays, or availability will always be correct. Always verify critical information with official transportation providers.
+                </p>
+              </div>
+            </section>
+          </FadeInSection>
+
+          <FadeInSection delay={1.0}>
+            <section className="mb-8">
+              <h2 className="text-2xl font-semibold text-black mb-4">Intellectual Property</h2>
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p>
+                  All content, design, and features of the App are owned by us or licensed to us.
+                </p>
+                <p>
+                  You may not copy, modify, or distribute any part of the App without prior permission.
+                </p>
+              </div>
+            </section>
+          </FadeInSection>
+
+          <FadeInSection delay={1.1}>
+            <section className="mb-8">
+              <h2 className="text-2xl font-semibold text-black mb-4">Privacy</h2>
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p>
+                  Your use of the App is also governed by our Privacy Policy.
+                </p>
+              </div>
+            </section>
+          </FadeInSection>
+
+          <FadeInSection delay={1.2}>
+            <section className="mb-8">
+              <h2 className="text-2xl font-semibold text-black mb-4">Limitation of Liability</h2>
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p>
+                  We are not responsible for any loss, delay, or inconvenience arising from the use of the App.
+                </p>
+                <p>
+                  Use the App at your own risk.
+                </p>
+              </div>
+            </section>
+          </FadeInSection>
+
+          <FadeInSection delay={1.3}>
+            <section className="mb-8">
+              <h2 className="text-2xl font-semibold text-black mb-4">Refund Policy for Catch Up</h2>
               
               <div className="space-y-6">
                 <div>
@@ -78,7 +135,7 @@ export default function TermsOfUse() {
                   <ul className="list-disc pl-6 space-y-1 text-gray-700">
                     <li>You are within the first 30 days of your subscription purchase or renewal.</li>
                     <li>The subscription was not used excessively or in violation of our Terms of Service.</li>
-                    <li>Technical issues that are caused by Tadabbur AI and could not be resolved within a reasonable time after the issue was reported.</li>
+                    <li>Technical issues that are caused by Catch Up and could not be resolved within a reasonable time after the issue was reported.</li>
                     <li>Accidental or duplicate payments.</li>
                   </ul>
                 </div>
@@ -96,7 +153,7 @@ export default function TermsOfUse() {
                     To request a refund:
                   </p>
                   <ul className="list-disc pl-6 space-y-1 text-gray-700">
-                    <li>Email our support team at <a href="mailto:support@hashtech.app" className="text-blue-600 hover:text-blue-800 underline">support@hashtech.app</a> with the subject line "Refund Request."</li>
+                    <li>Email our support team at <a href="mailto:catchupmobility@gmail.com" className="text-blue-600 hover:text-blue-800 underline">catchupmobility@gmail.com</a> with the subject line &quot;Refund Request.&quot;</li>
                     <li>Include the following details: your name, email address, subscription plan, and the reason for your refund request.</li>
                     <li>Our team will review your request and respond within 5-7 business days.</li>
                   </ul>
@@ -127,9 +184,9 @@ export default function TermsOfUse() {
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-medium text-black mb-3">7. Changes to This Policy</h3>
+                  <h3 className="text-lg font-medium text-black mb-3">7. Changes to Terms</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Tadabbur AI reserves the right to modify or update this refund policy at any time. We will notify users of any significant changes by posting the updated policy on our website.
+                    We may update these Terms from time to time. Continued use of the App after updates means you accept the revised Terms.
                   </p>
                 </div>
               </div>
@@ -137,7 +194,7 @@ export default function TermsOfUse() {
           </FadeInSection>
         </div>
 
-        <FadeInSection delay={0.9}>
+        <FadeInSection delay={1.4}>
           <div className="mt-12 pt-8 border-t border-gray-200">
             <Link 
               href="/" 
