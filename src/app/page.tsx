@@ -28,12 +28,12 @@ export default function Home() {
           <div className="flex items-center gap-3">
             <Image
               src="/app-icon.png"
-              alt="Tadabbur AI"
+              alt="Catch Up"
               width={50}
               height={50}
               className="rounded-lg"
             />
-            <span className="text-xl font-semibold text-black">Tadabbur AI</span>
+            <span className="text-xl font-semibold text-black">Catch Up</span>
           </div>
         </header>
       </FadeInSection>
@@ -50,23 +50,23 @@ export default function Home() {
                 >
                   <Image
                     src="/app-icon.png"
-                    alt="Tadabbur AI"
+                    alt="Catch Up"
                     width={120}
                     height={120}
                     className="rounded-3xl"
                   />
                 </motion.div>
-                <h1 className="text-xl font-semibold text-black">Tadabbur AI</h1>
+                <h1 className="text-xl font-semibold text-black">Catch Up!</h1>
               </div>
             </FadeInSection>
             
             <FadeInSection delay={0.6}>
               <div className="max-w-3xl">
                 <h2 className="text-4xl font-bold text-black mb-4">
-                  Enhance your Quran study with AI-powered insights
+                  Your smart Malaysia train navigation companion
                 </h2>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Discover deeper meanings and connections in the Quran through intelligent analysis and personalized learning experiences
+                  Simplify your public transport experience with smart route planning, real-time navigation, and interactive train maps. Whether you&apos;re a daily commuter or first-time traveler, Catch Up makes moving through Malaysia&apos;s train networks effortless.
                 </p>
               </div>
             </FadeInSection>
@@ -117,14 +117,21 @@ export default function Home() {
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
               className="relative"
             >
-              <div className="w-56 h-[450px] bg-black rounded-[3rem] p-2">
-                <div className="w-full h-full bg-white rounded-[2.5rem] overflow-hidden">
+              <div className="relative w-56 h-[450px]">
+                <Image
+                  src="/iphone-frame.png"
+                  alt="iPhone Frame"
+                  width={224}
+                  height={450}
+                  className="absolute inset-0 w-full h-full object-contain z-10"
+                />
+                <div className="absolute top-[20px] left-1/2 transform -translate-x-1/2 w-[190px] h-[390px] overflow-hidden rounded-[2rem]">
                   <Image
                     src="/screenshot-1.png"
                     alt="App Screenshot 1"
-                    width={208}
-                    height={426}
-                    className="w-full h-full object-cover bg-gray-100"
+                    width={190}
+                    height={390}
+                    className="object-cover w-full h-full"
                   />
                 </div>
               </div>
@@ -136,14 +143,21 @@ export default function Home() {
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
               className="relative"
             >
-              <div className="w-56 h-[450px] bg-black rounded-[3rem] p-2">
-                <div className="w-full h-full bg-white rounded-[2.5rem] overflow-hidden">
+              <div className="relative w-56 h-[450px]">
+                <Image
+                  src="/iphone-frame.png"
+                  alt="iPhone Frame"
+                  width={224}
+                  height={450}
+                  className="absolute inset-0 w-full h-full object-contain z-10"
+                />
+                <div className="absolute top-[20px] left-1/2 transform -translate-x-1/2 w-[190px] h-[390px] overflow-hidden rounded-[2rem]">
                   <Image
                     src="/screenshot-2.png"
                     alt="App Screenshot 2"
-                    width={208}
-                    height={426}
-                    className="w-full h-full object-cover bg-gray-100"
+                    width={190}
+                    height={390}
+                    className="object-cover w-full h-full"
                   />
                 </div>
               </div>
@@ -155,14 +169,21 @@ export default function Home() {
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
               className="relative"
             >
-              <div className="w-56 h-[450px] bg-black rounded-[3rem] p-2">
-                <div className="w-full h-full bg-white rounded-[2.5rem] overflow-hidden">
+              <div className="relative w-56 h-[450px]">
+                <Image
+                  src="/iphone-frame.png"
+                  alt="iPhone Frame"
+                  width={224}
+                  height={450}
+                  className="absolute inset-0 w-full h-full object-contain z-10"
+                />
+                <div className="absolute top-[20px] left-1/2 transform -translate-x-1/2 w-[190px] h-[390px] overflow-hidden rounded-[2rem]">
                   <Image
                     src="/screenshot-3.png"
                     alt="App Screenshot 3"
-                    width={208}
-                    height={426}
-                    className="w-full h-full object-cover bg-gray-100"
+                    width={190}
+                    height={390}
+                    className="object-cover w-full h-full"
                   />
                 </div>
               </div>
@@ -174,14 +195,21 @@ export default function Home() {
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
               className="relative"
             >
-              <div className="w-56 h-[450px] bg-black rounded-[3rem] p-2">
-                <div className="w-full h-full bg-white rounded-[2.5rem] overflow-hidden">
+              <div className="relative w-56 h-[450px]">
+                <Image
+                  src="/iphone-frame.png"
+                  alt="iPhone Frame"
+                  width={224}
+                  height={450}
+                  className="absolute inset-0 w-full h-full object-contain z-10"
+                />
+                <div className="absolute top-[20px] left-1/2 transform -translate-x-1/2 w-[190px] h-[390px] overflow-hidden rounded-[2rem]">
                   <Image
                     src="/screenshot-4.png"
                     alt="App Screenshot 4"
-                    width={208}
-                    height={426}
-                    className="w-full h-full object-cover bg-gray-100"
+                    width={190}
+                    height={390}
+                    className="object-cover w-full h-full"
                   />
                 </div>
               </div>
@@ -193,14 +221,21 @@ export default function Home() {
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
               className="relative"
             >
-              <div className="w-56 h-[450px] bg-black rounded-[3rem] p-2">
-                <div className="w-full h-full bg-white rounded-[2.5rem] overflow-hidden">
+              <div className="relative w-56 h-[450px]">
+                <Image
+                  src="/iphone-frame.png"
+                  alt="iPhone Frame"
+                  width={224}
+                  height={450}
+                  className="absolute inset-0 w-full h-full object-contain z-10"
+                />
+                <div className="absolute top-[20px] left-1/2 transform -translate-x-1/2 w-[190px] h-[390px] overflow-hidden rounded-[2rem]">
                   <Image
                     src="/screenshot-5.png"
                     alt="App Screenshot 5"
-                    width={208}
-                    height={426}
-                    className="w-full h-full object-cover bg-gray-100"
+                    width={190}
+                    height={390}
+                    className="object-cover w-full h-full"
                   />
                 </div>
               </div>
@@ -221,10 +256,10 @@ export default function Home() {
               className="bg-gray-50 rounded-lg p-6"
             >
               <h3 className="text-lg font-semibold text-black mb-2">
-                What makes Tadabbur AI different from other Quran apps?
+                What makes Catch Up different from other train apps?
               </h3>
               <p className="text-gray-600">
-                Tadabbur AI uses advanced artificial intelligence to provide personalized insights, thematic connections, and deeper understanding of Quranic verses based on your learning journey and interests.
+                Catch Up offers smart route planning with real-time data, interactive train maps, and comprehensive timetable insights. Our app is specifically designed for Malaysia&apos;s train networks with multilingual support and intuitive navigation.
               </p>
             </motion.div>
 
@@ -233,10 +268,10 @@ export default function Home() {
               className="bg-gray-50 rounded-lg p-6"
             >
               <h3 className="text-lg font-semibold text-black mb-2">
-                Is the app available in multiple languages?
+                Which languages does the app support?
               </h3>
               <p className="text-gray-600">
-                Yes, Tadabbur AI supports multiple languages including Arabic, English, and other major languages to make Quranic study accessible to Muslims worldwide.
+                Catch Up is available in English and Bahasa Malaysia for wider accessibility, making it easy for both locals and tourists to navigate Malaysia&apos;s train systems.
               </p>
             </motion.div>
 
@@ -245,22 +280,10 @@ export default function Home() {
               className="bg-gray-50 rounded-lg p-6"
             >
               <h3 className="text-lg font-semibold text-black mb-2">
-                How does the AI analysis work?
+                How does the smart route planning work?
               </h3>
               <p className="text-gray-600">
-                Our AI analyzes Quranic text to identify themes, provide contextual explanations, and suggest related verses, helping you discover deeper meanings and connections in your studies.
-              </p>
-            </motion.div>
-
-            <motion.div 
-              variants={staggerChildVariants}
-              className="bg-gray-50 rounded-lg p-6"
-            >
-              <h3 className="text-lg font-semibold text-black mb-2">
-                Is my study data kept private?
-              </h3>
-              <p className="text-gray-600">
-                Absolutely. We prioritize your privacy and ensure that your personal study data is kept secure and private, following the highest standards of data protection.
+                Our smart route planning finds the best routes between stations, even with multiple transfers, using real-time or schedule-based data. View arrival times, departure times, transfer points, and distance traveled all in one place.
               </p>
             </motion.div>
           </StaggerContainer>
@@ -273,13 +296,13 @@ export default function Home() {
             <div className="flex items-center gap-3">
               <Image
                 src="/app-icon.png"
-                alt="Tadabbur AI"
+                alt="Catch Up"
                 width={40}
                 height={40}
                 className="rounded-lg"
               />
               <div className="text-left">
-                <span className="text-lg font-semibold text-black">Tadabbur AI</span>
+                <span className="text-lg font-semibold text-black">Catch Up</span>
                 <p className="text-sm text-gray-600">© 2025 All rights reserved.</p>
               </div>
             </div>
