@@ -125,12 +125,12 @@ export default function Home() {
                   height={450}
                   className="absolute inset-0 w-full h-full object-contain z-10"
                 />
-                <div className="absolute top-[20px] left-1/2 transform -translate-x-1/2 w-[190px] h-[390px] overflow-hidden rounded-[2rem]">
+                <div className="absolute top-[25px] left-[17px] w-[190px] h-[385px] overflow-hidden rounded-[2rem]">
                   <Image
                     src="/screenshot-1.png"
                     alt="App Screenshot 1"
                     width={190}
-                    height={390}
+                    height={385}
                     className="object-cover w-full h-full"
                   />
                 </div>
@@ -151,12 +151,12 @@ export default function Home() {
                   height={450}
                   className="absolute inset-0 w-full h-full object-contain z-10"
                 />
-                <div className="absolute top-[20px] left-1/2 transform -translate-x-1/2 w-[190px] h-[390px] overflow-hidden rounded-[2rem]">
+                <div className="absolute top-[25px] left-[17px] w-[210px] h-[385px] overflow-hidden rounded-[2rem]">
                   <Image
                     src="/screenshot-2.png"
                     alt="App Screenshot 2"
                     width={190}
-                    height={390}
+                    height={385}
                     className="object-cover w-full h-full"
                   />
                 </div>
@@ -177,12 +177,12 @@ export default function Home() {
                   height={450}
                   className="absolute inset-0 w-full h-full object-contain z-10"
                 />
-                <div className="absolute top-[20px] left-1/2 transform -translate-x-1/2 w-[190px] h-[390px] overflow-hidden rounded-[2rem]">
+                <div className="absolute top-[25px] left-[17px] w-[190px] h-[385px] overflow-hidden rounded-[2rem]">
                   <Image
                     src="/screenshot-3.png"
                     alt="App Screenshot 3"
                     width={190}
-                    height={390}
+                    height={385}
                     className="object-cover w-full h-full"
                   />
                 </div>
@@ -203,12 +203,12 @@ export default function Home() {
                   height={450}
                   className="absolute inset-0 w-full h-full object-contain z-10"
                 />
-                <div className="absolute top-[20px] left-1/2 transform -translate-x-1/2 w-[190px] h-[390px] overflow-hidden rounded-[2rem]">
+                <div className="absolute top-[25px] left-[17px] w-[190px] h-[385px] overflow-hidden rounded-[2rem]">
                   <Image
                     src="/screenshot-4.png"
                     alt="App Screenshot 4"
                     width={190}
-                    height={390}
+                    height={385}
                     className="object-cover w-full h-full"
                   />
                 </div>
@@ -229,12 +229,12 @@ export default function Home() {
                   height={450}
                   className="absolute inset-0 w-full h-full object-contain z-10"
                 />
-                <div className="absolute top-[20px] left-1/2 transform -translate-x-1/2 w-[190px] h-[390px] overflow-hidden rounded-[2rem]">
+                <div className="absolute top-[25px] left-[17px] w-[190px] h-[385px] overflow-hidden rounded-[2rem]">
                   <Image
                     src="/screenshot-5.png"
                     alt="App Screenshot 5"
                     width={190}
-                    height={390}
+                    height={385}
                     className="object-cover w-full h-full"
                   />
                 </div>
