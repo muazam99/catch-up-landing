@@ -306,6 +306,12 @@ export default function Home() {
             
             <div className="flex gap-6">
               <Link 
+                href="/support"
+                className="text-gray-600 hover:text-black transition-colors duration-200"
+              >
+               Support
+              </Link>
+              <Link 
                 href="/privacy-policy" 
                 className="text-gray-600 hover:text-black transition-colors duration-200"
               >
