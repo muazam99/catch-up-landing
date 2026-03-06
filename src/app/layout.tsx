@@ -4,6 +4,7 @@ import "./globals.css";
 import PageTransition from "@/components/animations/PageTransition";
 import { Analytics } from '@vercel/analytics/next';
 import { Toaster } from 'react-hot-toast';
+import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Catch Up!",
-  description: "Malaysia Train Navigation App",
+  title: "Qiyam",
+  description: "Mosque Prayers Tracker",
   icons: {
     icon: "/app-icon.png",
   },
@@ -40,33 +41,33 @@ export default function RootLayout({
           {/* FadeInSection can be replaced with a static div if not available globally */}
           <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <img
+              <Image
                 src="/app-icon.png"
-                alt="Catch Up"
+                alt="Qiyam"
                 width={40}
                 height={40}
-                className="rounded-lg"
+                className="rounded-[9px]"
               />
               <div className="text-left">
-                <span className="text-lg font-semibold text-black">Catch Up</span>
-                <p className="text-sm text-gray-600">© 2025 All rights reserved.</p>
+                <span className="text-lg font-semibold text-black">Qiyam</span>
+                <p className="text-sm text-gray-600">© 2026 All rights reserved.</p>
               </div>
             </div>
             <div className="flex gap-6">
-              <a 
+              <a
                 href="/support"
                 className="text-gray-600 hover:text-black transition-colors duration-200"
               >
                Support
               </a>
-              <a 
-                href="/privacy-policy" 
+              <a
+                href="/privacy-policy"
                 className="text-gray-600 hover:text-black transition-colors duration-200"
               >
                 Privacy Policy
               </a>
-              <a 
-                href="/terms-of-use" 
+              <a
+                href="/terms-of-use"
                 className="text-gray-600 hover:text-black transition-colors duration-200"
               >
                 Terms of Use

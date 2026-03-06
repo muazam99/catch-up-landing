@@ -34,7 +34,7 @@ export default function SupportPage() {
       <Card className="w-full max-w-md mx-auto p-8">
         <div className="flex flex-col items-center mb-6">
           <Image src="/app-icon.png" alt="App Logo" width={80} height={80} className="mx-auto" />
-          <h2 className="mt-4 font-bold text-2xl text-black text-center">Catch Up!</h2>
+          <h2 className="mt-4 font-bold text-2xl text-black text-center">Qiyam</h2>
         </div>
         <h3 className="text-xl font-semibold text-center text-black mb-2">Support</h3>
         <p className="text-center text-black mb-6">

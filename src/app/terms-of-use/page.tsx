@@ -12,12 +12,12 @@ export default function TermsOfUse() {
           <Link href="/" className="flex items-center gap-3">
             <Image
               src="/app-icon.png"
-              alt="Catch Up Mobility"
+              alt="Qiyam"
               width={50}
               height={50}
               className="rounded-lg"
             />
-            <span className="text-xl font-semibold text-black">Catch Up</span>
+            <span className="text-xl font-semibold text-black">Qiyam</span>
           </Link>
         </header>
       </FadeInSection>
@@ -35,7 +35,7 @@ export default function TermsOfUse() {
             <section className="mb-8">
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  Welcome to Catch Up Mobility (&quot;App&quot;, &quot;we&quot;, &quot;our&quot;, &quot;us&quot;). By downloading, accessing, or using our App, you agree to be bound by these Terms of Use. If you do not agree, please do not use the App.
+                  Welcome to Qiyam(&quot;App&quot;, &quot;we&quot;, &quot;our&quot;, &quot;us&quot;). By downloading, accessing, or using our App, you agree to be bound by these Terms of Use. If you do not agree, please do not use the App.
                 </p>
               </div>
             </section>
@@ -69,7 +69,7 @@ export default function TermsOfUse() {
             </section>
           </FadeInSection>
 
-          <FadeInSection delay={0.9}>
+          {/* <FadeInSection delay={0.9}>
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-black mb-4">Transportation Information</h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -81,7 +81,7 @@ export default function TermsOfUse() {
                 </p>
               </div>
             </section>
-          </FadeInSection>
+          </FadeInSection> */}
 
           <FadeInSection delay={1.0}>
             <section className="mb-8">
@@ -124,8 +124,8 @@ export default function TermsOfUse() {
 
           <FadeInSection delay={1.3}>
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-black mb-4">Refund Policy for Catch Up</h2>
-              
+              <h2 className="text-2xl font-semibold text-black mb-4">Refund Policy for Qiyam</h2>
+
               <div className="space-y-6">
                 <div>
                   <h3 className="text-lg font-medium text-black mb-3">1. Eligibility for Refunds</h3>
@@ -135,7 +135,7 @@ export default function TermsOfUse() {
                   <ul className="list-disc pl-6 space-y-1 text-gray-700">
                     <li>You are within the first 30 days of your subscription purchase or renewal.</li>
                     <li>The subscription was not used excessively or in violation of our Terms of Service.</li>
-                    <li>Technical issues that are caused by Catch Up and could not be resolved within a reasonable time after the issue was reported.</li>
+                    <li>Technical issues that are caused by Qiyam and could not be resolved within a reasonable time after the issue was reported.</li>
                     <li>Accidental or duplicate payments.</li>
                   </ul>
                 </div>
@@ -196,8 +196,8 @@ export default function TermsOfUse() {
 
         <FadeInSection delay={1.4}>
           <div className="mt-12 pt-8 border-t border-gray-200">
-            <Link 
-              href="/" 
+            <Link
+              href="/"
               className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-200"
             >
               ← Back to Home

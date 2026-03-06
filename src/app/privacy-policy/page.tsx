@@ -12,12 +12,12 @@ export default function PrivacyPolicy() {
           <Link href="/" className="flex items-center gap-3">
             <Image
               src="/app-icon.png"
-              alt="Catch Up Mobility"
+              alt="Qiyam"
               width={50}
               height={50}
               className="rounded-lg"
             />
-            <span className="text-xl font-semibold text-black">Catch Up</span>
+            <span className="text-xl font-semibold text-black">Qiyam</span>
           </Link>
         </header>
       </FadeInSection>
@@ -26,7 +26,7 @@ export default function PrivacyPolicy() {
         <FadeInSection delay={0.4}>
           <h1 className="text-4xl font-bold text-black mb-4">PRIVACY POLICY</h1>
           <div className="text-gray-600 mb-8">
-            <p><strong>Last updated July 23, 2025</strong></p>
+            <p><strong>Last updated March 3, 2026</strong></p>
           </div>
         </FadeInSection>
 
@@ -35,10 +35,10 @@ export default function PrivacyPolicy() {
             <section className="mb-8">
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  This Privacy Notice for Catch Up Mobility (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), describes how and why we might access, collect, store, use, and/or share (&quot;process&quot;) your personal information when you use our services (&quot;Services&quot;), including when you:
+                  This Privacy Notice for Qiyam (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), describes how and why we might access, collect, store, use, and/or share (&quot;process&quot;) your personal information when you use our services (&quot;Services&quot;), including when you:
                 </p>
                 <ul className="list-disc pl-6 space-y-1">
-                  <li>Download and use our mobile application (Catch Up! : Train Navigation), or any other application of ours that links to this Privacy Notice</li>
+                  <li>Download and use our mobile application (Qiyam), or any other application of ours that links to this Privacy Notice</li>
                   <li>Engage with us in other related ways, including any sales, marketing, or events</li>
                 </ul>
                 <p>
@@ -130,7 +130,7 @@ export default function PrivacyPolicy() {
                     All personal information that you provide to us must be true, complete, and accurate, and you must notify us of any changes to such personal information.
                   </p>
                 </div>
-                
+
                 <div>
                   <h3 className="text-lg font-medium text-black mb-3">Information automatically collected</h3>
                   <p className="text-gray-700 leading-relaxed mb-3">
@@ -305,7 +305,7 @@ export default function PrivacyPolicy() {
                   If you have questions or comments about this notice, you may email us at <a href="mailto:catchupmobility@gmail.com" className="text-blue-600 hover:text-blue-800 underline">catchupmobility@gmail.com</a> or contact us by post at:
                 </p>
                 <div className="ml-4">
-                  <p>Catch Up Mobility</p>
+                  <p>Catch Up</p>
                   <p>Bandar Amanjaya</p>
                   <p>Sungai Petani, Kedah 08000</p>
                   <p>Malaysia</p>
@@ -328,8 +328,8 @@ export default function PrivacyPolicy() {
 
         <FadeInSection delay={2.0}>
           <div className="mt-12 pt-8 border-t border-gray-200">
-            <Link 
-              href="/" 
+            <Link
+              href="/"
               className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-200"
             >
               ← Back to Home
