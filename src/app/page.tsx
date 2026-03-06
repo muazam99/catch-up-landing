@@ -1,7 +1,7 @@
 'use client';
 
 import Image from "next/image";
-import SignupModal  from "@/components/Function/SignupModa";
+import SignupModal from "@/components/Function/SignupModal";
 // import Link from "next/link";
 import FadeInSection from "@/components/animations/FadeInSection";
 import StaggerContainer, { staggerChildVariants } from "@/components/animations/StaggerContainer";
@@ -106,7 +106,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* <section className="max-w-7xl mx-auto py-16">
+         <section className="max-w-7xl mx-auto py-16">
           <StaggerContainer
             staggerDelay={0.15}
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 justify-items-center"
@@ -241,7 +241,7 @@ export default function Home() {
               </div>
             </motion.div>
           </StaggerContainer>
-        </section> */}
+        </section>
 
         <section className="max-w-4xl mx-auto py-16">
           <FadeInSection delay={0.2}>
