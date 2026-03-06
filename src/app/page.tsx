@@ -65,11 +65,11 @@ export default function Home() {
                  Track your prayers at the mosque by checking in when you arrive. Build consistency, earn personal streaks, and stay motivated in your daily prayers at mosques.
                 </p>
               </div>
+
+              <SignupModal /> {/* button for join early testing */}
+
+
             </FadeInSection>
-
-            <SignupModal />
-
-
 
              {/* <FadeInSection delay={0.8}>
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
