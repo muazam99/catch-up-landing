@@ -9,13 +9,13 @@ import { motion } from "framer-motion";
 // import toast from 'react-hot-toast';
 
 export default function Home() {
-  // const handleAppStoreClick = () => {
-  //   window.open('https://apps.apple.com/my/app/catch-up-malaysia-train/id6751648902', '_blank');
-  // };
+   const handleGooglePlayClick = () => {
+     window.open('https://play.google.com/store/apps/details?id=com.catchupmobility.qiyam', '_blank');
+   };
 
-  // const handleGooglePlayClick = () => {
-  //   window.open('https://play.google.com/store/apps/details?id=com.catchupmobility.catchupapp', '_blank');
-  // };
+  //   const handleAppStoreClick = () => {
+  //    window.open('https://apps.apple.com/my/app/catch-up-malaysia-train/id6751648902', '_blank');
+  //  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -66,14 +66,30 @@ export default function Home() {
                 </p>
               </div>
 
-              <SignupModal /> {/* button for join early testing */}
+              {/* <SignupModal /> button for join early testing */}
 
 
             </FadeInSection>
 
-             {/* <FadeInSection delay={0.8}>
+              <FadeInSection delay={0.8}>
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                <motion.div
+                <SignupModal>
+                  <motion.div
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                  >
+                    <Image
+                      src="/app_store.png"
+                      alt="Download on the App Store"
+                      width={200}
+                      height={60}
+                      className="bg-gray-200 rounded-lg cursor-pointer"
+                    />
+                  </motion.div>
+                </SignupModal>
+
+               {/* <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   transition={{ type: "spring", stiffness: 300, damping: 20 }}
@@ -86,7 +102,8 @@ export default function Home() {
                     height={60}
                     className="bg-gray-200 rounded-lg cursor-pointer"
                   />
-                </motion.div>
+                </motion.div> */}
+
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -102,7 +119,7 @@ export default function Home() {
                   />
                 </motion.div>
               </div>
-            </FadeInSection> */}
+            </FadeInSection>
           </div>
         </section>
 

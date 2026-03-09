@@ -1,8 +1,7 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, ReactNode, useState } from "react";
 
-import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -13,35 +12,51 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
-export default function SignupModal() {
+type SignupModalProps = {
+  children: ReactNode;
+};
+
+export default function SignupModal({ children }: SignupModalProps) {
   const [open, setOpen] = useState<boolean>(false);
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
   const submitEmail = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const res = await fetch("/api/signup", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ email }),
-    });
+    setIsSubmitting(true);
+    setMessage("");
 
-    const data: { message: string } = await res.json();
+    try {
+      const res = await fetch("/api/signup", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
 
-    setMessage(data.message);
-    setEmail("");
+      const data: { message: string } = await res.json();
+
+      setMessage(data.message);
+
+      if (res.ok) {
+        setEmail("");
+      }
+    } catch {
+      setMessage("We could not send the email right now. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button className="mt-15 h-13 w-60 text-2xl font-medium shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md">
-          Join Early Testing
-        </Button>
+        {children}
       </DialogTrigger>
 
       <DialogContent>
@@ -59,11 +74,12 @@ export default function SignupModal() {
             placeholder="Enter your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            disabled={isSubmitting}
           />
 
           <DialogFooter>
-            <Button type="submit">
-              Sign Up
+            <Button type="submit" disabled={isSubmitting}>
+              {isSubmitting ? "Sending..." : "Sign Up"}
             </Button>
           </DialogFooter>
         </form>
