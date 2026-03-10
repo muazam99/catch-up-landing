@@ -20,7 +20,7 @@ export default function SupportPage() {
     setError('');
     setSent(false);
     try {
-      const mailto = `mailto:support@catchupmobility.com?subject=Support%20Request%20from%20${encodeURIComponent(name)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`)}`;
+      const mailto = `mailto:qiyamapp.official@gmail.com?subject=Support%20Request%20from%20${encodeURIComponent(name)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`)}`;
       window.location.href = mailto;
       setSent(true);
     } catch (err) {
@@ -39,7 +39,7 @@ export default function SupportPage() {
         <h3 className="text-xl font-semibold text-center text-black mb-2">Support</h3>
         <p className="text-center text-black mb-6">
           For faster support, send any questions and request directly to{' '}
-          <a href="mailto:support@catchupmobility.com" className="text-primary underline">support@catchupmobility.com</a>.
+          <a href="mailto:qiyamapp.official@gmail.com" className="text-primary underline">qiyamapp.official@gmail.com</a>.
         </p>
         <form onSubmit={handleSend} className="space-y-4">
           <div className="flex gap-3">

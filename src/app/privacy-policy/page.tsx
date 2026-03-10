@@ -42,7 +42,7 @@ export default function PrivacyPolicy() {
                   <li>Engage with us in other related ways, including any sales, marketing, or events</li>
                 </ul>
                 <p>
-                  <strong>Questions or concerns?</strong> Reading this Privacy Notice will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at <a href="mailto:catchupmobility@gmail.com" className="text-blue-600 hover:text-blue-800 underline">catchupmobility@gmail.com</a>.
+                  <strong>Questions or concerns?</strong> Reading this Privacy Notice will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at <a href="mailto:qiyamapp.official@gmail.com" className="text-blue-600 hover:text-blue-800 underline">qiyamapp.official@gmail.com</a>.
                 </p>
               </div>
             </section>
@@ -246,7 +246,7 @@ export default function PrivacyPolicy() {
                   <strong>In Short:</strong> We do not knowingly collect data from or market to children under 18 years of age.
                 </p>
                 <p>
-                  We do not knowingly collect, solicit data from, or market to children under 18 years of age, nor do we knowingly sell such personal information. By using the Services, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent&apos;s use of the Services. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18, please contact us at <a href="mailto:catchupmobility@gmail.com" className="text-blue-600 hover:text-blue-800 underline">catchupmobility@gmail.com</a>.
+                  We do not knowingly collect, solicit data from, or market to children under 18 years of age, nor do we knowingly sell such personal information. By using the Services, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent&apos;s use of the Services. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18, please contact us at <a href="mailto:qiyamapp.official@gmail.com" className="text-blue-600 hover:text-blue-800 underline">qiyamapp.official@gmail.com</a>.
                 </p>
               </div>
             </section>
@@ -266,7 +266,7 @@ export default function PrivacyPolicy() {
                   However, please note that this will not affect the lawfulness of the processing before its withdrawal nor, when applicable law allows, will it affect the processing of your personal information conducted in reliance on lawful processing grounds other than consent.
                 </p>
                 <p>
-                  If you have questions or comments about your privacy rights, you may email us at <a href="mailto:catchupmobility@gmail.com" className="text-blue-600 hover:text-blue-800 underline">catchupmobility@gmail.com</a>.
+                  If you have questions or comments about your privacy rights, you may email us at <a href="mailto:qiyamapp.official@gmail.com" className="text-blue-600 hover:text-blue-800 underline">qiyamapp.official@gmail.com</a>.
                 </p>
               </div>
             </section>
@@ -302,10 +302,10 @@ export default function PrivacyPolicy() {
               <h2 className="text-2xl font-semibold text-black mb-4">10. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  If you have questions or comments about this notice, you may email us at <a href="mailto:catchupmobility@gmail.com" className="text-blue-600 hover:text-blue-800 underline">catchupmobility@gmail.com</a> or contact us by post at:
+                  If you have questions or comments about this notice, you may email us at <a href="mailto:qiyamapp.official@gmail.com" className="text-blue-600 hover:text-blue-800 underline">qiyamapp.official@gmail.com</a> or contact us by post at:
                 </p>
                 <div className="ml-4">
-                  <p>Catch Up</p>
+                  <p>Qiyam</p>
                   <p>Bandar Amanjaya</p>
                   <p>Sungai Petani, Kedah 08000</p>
                   <p>Malaysia</p>

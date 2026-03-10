@@ -153,7 +153,7 @@ export default function TermsOfUse() {
                     To request a refund:
                   </p>
                   <ul className="list-disc pl-6 space-y-1 text-gray-700">
-                    <li>Email our support team at <a href="mailto:catchupmobility@gmail.com" className="text-blue-600 hover:text-blue-800 underline">catchupmobility@gmail.com</a> with the subject line &quot;Refund Request.&quot;</li>
+                    <li>Email our support team at <a href="mailto:qiyamapp.official@gmail.com" className="text-blue-600 hover:text-blue-800 underline">qiyamapp.official@gmail.com</a> with the subject line &quot;Refund Request.&quot;</li>
                     <li>Include the following details: your name, email address, subscription plan, and the reason for your refund request.</li>
                     <li>Our team will review your request and respond within 5-7 business days.</li>
                   </ul>
