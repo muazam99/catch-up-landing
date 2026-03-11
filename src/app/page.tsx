@@ -144,7 +144,7 @@ export default function Home() {
                 />
                 <div className="absolute top-[25px] left-[17px] w-[190px] h-[385px] overflow-hidden rounded-[2rem]">
                   <Image
-                    src="/screenshot-1.png"
+                    src="/screenshot-1.jpg"
                     alt="App Screenshot 1"
                     width={190}
                     height={385}
@@ -170,7 +170,7 @@ export default function Home() {
                 />
                 <div className="absolute top-[25px] left-[17px] w-[210px] h-[385px] overflow-hidden rounded-[2rem]">
                   <Image
-                    src="/screenshot-2.png"
+                    src="/screenshot-2.jpg"
                     alt="App Screenshot 2"
                     width={190}
                     height={385}
@@ -196,7 +196,7 @@ export default function Home() {
                 />
                 <div className="absolute top-[25px] left-[17px] w-[190px] h-[385px] overflow-hidden rounded-[2rem]">
                   <Image
-                    src="/screenshot-3.png"
+                    src="/screenshot-3.jpg"
                     alt="App Screenshot 3"
                     width={190}
                     height={385}
@@ -222,7 +222,7 @@ export default function Home() {
                 />
                 <div className="absolute top-[25px] left-[17px] w-[190px] h-[385px] overflow-hidden rounded-[2rem]">
                   <Image
-                    src="/screenshot-4.png"
+                    src="/screenshot-4.jpg"
                     alt="App Screenshot 4"
                     width={190}
                     height={385}
@@ -248,7 +248,7 @@ export default function Home() {
                 />
                 <div className="absolute top-[25px] left-[17px] w-[190px] h-[385px] overflow-hidden rounded-[2rem]">
                   <Image
-                    src="/screenshot-5.png"
+                    src="/screenshot-5.jpg"
                     alt="App Screenshot 5"
                     width={190}
                     height={385}
