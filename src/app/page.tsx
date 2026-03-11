@@ -13,6 +13,9 @@ export default function Home() {
      window.open('https://play.google.com/store/apps/details?id=com.catchupmobility.qiyam', '_blank');
    };
 
+  const phoneViewportClassName =
+    "absolute top-[25px] left-[17px] w-[190px] h-[385px] overflow-hidden rounded-[2rem]";
+
   //   const handleAppStoreClick = () => {
   //    window.open('https://apps.apple.com/my/app/catch-up-malaysia-train/id6751648902', '_blank');
   //  };
@@ -142,7 +145,7 @@ export default function Home() {
                   height={450}
                   className="absolute inset-0 w-full h-full object-contain z-10"
                 />
-                <div className="absolute top-[25px] left-[17px] w-[190px] h-[385px] overflow-hidden rounded-[2rem]">
+                <div className={phoneViewportClassName}>
                   <Image
                     src="/screenshot-1.jpg"
                     alt="App Screenshot 1"
@@ -168,7 +171,7 @@ export default function Home() {
                   height={450}
                   className="absolute inset-0 w-full h-full object-contain z-10"
                 />
-                <div className="absolute top-[25px] left-[17px] w-[210px] h-[385px] overflow-hidden rounded-[2rem]">
+                <div className={phoneViewportClassName}>
                   <Image
                     src="/screenshot-2.jpg"
                     alt="App Screenshot 2"
@@ -194,7 +197,7 @@ export default function Home() {
                   height={450}
                   className="absolute inset-0 w-full h-full object-contain z-10"
                 />
-                <div className="absolute top-[25px] left-[17px] w-[190px] h-[385px] overflow-hidden rounded-[2rem]">
+                <div className={phoneViewportClassName}>
                   <Image
                     src="/screenshot-3.jpg"
                     alt="App Screenshot 3"
@@ -220,7 +223,7 @@ export default function Home() {
                   height={450}
                   className="absolute inset-0 w-full h-full object-contain z-10"
                 />
-                <div className="absolute top-[25px] left-[17px] w-[190px] h-[385px] overflow-hidden rounded-[2rem]">
+                <div className={phoneViewportClassName}>
                   <Image
                     src="/screenshot-4.jpg"
                     alt="App Screenshot 4"
@@ -246,7 +249,7 @@ export default function Home() {
                   height={450}
                   className="absolute inset-0 w-full h-full object-contain z-10"
                 />
-                <div className="absolute top-[25px] left-[17px] w-[190px] h-[385px] overflow-hidden rounded-[2rem]">
+                <div className={phoneViewportClassName}>
                   <Image
                     src="/screenshot-5.jpg"
                     alt="App Screenshot 5"
