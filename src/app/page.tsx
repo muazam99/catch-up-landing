@@ -308,6 +308,31 @@ export default function Home() {
             </motion.div>
           </StaggerContainer>
         </section>
+
+        <section className="w-full border-t border-gray-200 py-12">
+          <FadeInSection delay={0.2}>
+            <div className="mx-auto flex max-w-4xl flex-col items-center gap-4 px-6 text-center">
+              <p className="text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
+                In collaboration with KrackedDevs
+              </p>
+              <a
+                href="https://krackeddevs.com/showcase/project/31e53497-e431-4dbb-ac66-5c03064c3fd7"
+                target="_blank"
+                rel="noreferrer"
+                className="transition-opacity hover:opacity-80"
+                aria-label="Visit KrackedDevs"
+              >
+                <Image
+                  src="/kdlogodev-export.png"
+                  alt="KrackedDevs"
+                  width={220}
+                  height={88}
+                  className="h-auto w-auto max-w-[220px]"
+                />
+              </a>
+            </div>
+          </FadeInSection>
+        </section>
       </main>
     </div>
 
