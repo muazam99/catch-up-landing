@@ -17,7 +17,7 @@ export default function Home() {
     "absolute top-[25px] left-[17px] w-[190px] h-[385px] overflow-hidden rounded-[2rem]";
 
     const handleAppStoreClick = () => {
-     window.open('https://apps.apple.com/tw/app/qiyam-masjid-tracker/id6760124208', '_blank');
+     window.open('https://apps.apple.com/us/app/qiyam-masjid-tracker/id6760124208', '_blank');
    };
 
   return (
