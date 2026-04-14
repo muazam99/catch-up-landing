@@ -16,9 +16,9 @@ export default function Home() {
   const phoneViewportClassName =
     "absolute top-[25px] left-[17px] w-[190px] h-[385px] overflow-hidden rounded-[2rem]";
 
-  //   const handleAppStoreClick = () => {
-  //    window.open('https://apps.apple.com/my/app/catch-up-malaysia-train/id6751648902', '_blank');
-  //  };
+    const handleAppStoreClick = () => {
+     window.open('https://apps.apple.com/tw/app/qiyam-masjid-tracker/id6760124208', '_blank');
+   };
 
   return (
     <div className="min-h-screen bg-white">
@@ -76,7 +76,7 @@ export default function Home() {
 
               <FadeInSection delay={0.8}>
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                <SignupModal>
+                {/* <SignupModal>
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -90,9 +90,9 @@ export default function Home() {
                       className="bg-gray-200 rounded-lg cursor-pointer"
                     />
                   </motion.div>
-                </SignupModal>
+                </SignupModal> */}
 
-               {/* <motion.div
+               <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   transition={{ type: "spring", stiffness: 300, damping: 20 }}
@@ -105,7 +105,7 @@ export default function Home() {
                     height={60}
                     className="bg-gray-200 rounded-lg cursor-pointer"
                   />
-                </motion.div> */}
+                </motion.div>
 
                 <motion.div
                   whileHover={{ scale: 1.05 }}
