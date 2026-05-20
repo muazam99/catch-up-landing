@@ -28,6 +28,25 @@ const GOOGLE_PLAY_URL =
 const phoneViewportClassName =
   "absolute left-[6.9%] right-[6.9%] top-[1.9%] bottom-[2.1%] overflow-hidden rounded-[9%]";
 
+function getDeviceStoreUrl() {
+  const userAgent = window.navigator.userAgent;
+  const isIOS =
+    /iPad|iPhone|iPod/.test(userAgent) ||
+    (window.navigator.platform === "MacIntel" &&
+      window.navigator.maxTouchPoints > 1);
+  const isAndroid = /Android/i.test(userAgent);
+
+  if (isIOS) {
+    return APP_STORE_URL;
+  }
+
+  if (isAndroid) {
+    return GOOGLE_PLAY_URL;
+  }
+
+  return "#download";
+}
+
 const features = [
   {
     icon: CheckCircle2,
@@ -229,6 +248,17 @@ function FaqItem({ q, a, defaultOpen = false }: { q: string; a: string; defaultO
 }
 
 export default function Home() {
+  const handleGetAppClick = () => {
+    const storeUrl = getDeviceStoreUrl();
+
+    if (storeUrl.startsWith("#")) {
+      document.querySelector(storeUrl)?.scrollIntoView({ behavior: "smooth" });
+      return;
+    }
+
+    window.location.href = storeUrl;
+  };
+
   return (
     <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
       {/* Sticky Header */}
@@ -260,12 +290,13 @@ export default function Home() {
             </a>
           </nav>
 
-          <a
-            href="#download"
+          <button
+            type="button"
+            onClick={handleGetAppClick}
             className="inline-flex items-center gap-2 rounded-full bg-[var(--primary)] px-4 py-2 text-sm font-medium text-[var(--primary-foreground)] shadow-sm transition-transform hover:scale-[1.03]"
           >
             Get the app
-          </a>
+          </button>
         </div>
       </header>
 
