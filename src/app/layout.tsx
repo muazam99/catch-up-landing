@@ -17,7 +17,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://qiyam.app";
+const siteUrl = "https://qiyam.com.my";
+const previewImage = "/qiyam_preview.jpg";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -31,7 +32,16 @@ export const metadata: Metadata = {
     title: "Qiyam: Masjid Tracker",
     description:
       "Level up your masjid journey. Check in at any masjid, follow daily prayer times, and build the habit that lasts.",
-    images: ["/app-icon.png"],
+    url: siteUrl,
+    siteName: "Qiyam",
+    images: [
+      {
+        url: previewImage,
+        width: 1187,
+        height: 612,
+        alt: "Qiyam Masjid Tracker app preview",
+      },
+    ],
     type: "website",
   },
   twitter: {
@@ -39,7 +49,7 @@ export const metadata: Metadata = {
     title: "Qiyam: Masjid Tracker",
     description:
       "Level up your masjid journey. Check in at any masjid, follow daily prayer times, and build the habit that lasts.",
-    images: ["/app-icon.png"],
+    images: [previewImage],
   },
 };
 
