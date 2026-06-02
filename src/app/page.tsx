@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import posthog from "posthog-js";
 import {
   MapPin,
   CheckCircle2,
@@ -157,10 +158,12 @@ function StoreButtons({
   className?: string;
 }) {
   const handleAppStoreClick = () => {
+    posthog.capture("click_app_store");
     window.open(APP_STORE_URL, "_blank");
   };
 
   const handleGooglePlayClick = () => {
+    posthog.capture("click_google_play");
     window.open(GOOGLE_PLAY_URL, "_blank");
   };
 
@@ -249,6 +252,7 @@ function FaqItem({ q, a, defaultOpen = false }: { q: string; a: string; defaultO
 
 export default function Home() {
   const handleGetAppClick = () => {
+    posthog.capture("click_get_app");
     const storeUrl = getDeviceStoreUrl();
 
     if (storeUrl.startsWith("#")) {
