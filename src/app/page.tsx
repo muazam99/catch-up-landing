@@ -20,6 +20,7 @@ import FadeInSection from "@/components/animations/FadeInSection";
 import StaggerContainer, {
   staggerChildVariants,
 } from "@/components/animations/StaggerContainer";
+import SiteHeader from "@/components/SiteHeader";
 
 const APP_STORE_URL =
   "https://apps.apple.com/us/app/qiyam-masjid-tracker/id6760124208";
@@ -28,25 +29,6 @@ const GOOGLE_PLAY_URL =
 
 const phoneViewportClassName =
   "absolute left-[6.9%] right-[6.9%] top-[1.9%] bottom-[2.1%] overflow-hidden rounded-[9%]";
-
-function getDeviceStoreUrl() {
-  const userAgent = window.navigator.userAgent;
-  const isIOS =
-    /iPad|iPhone|iPod/.test(userAgent) ||
-    (window.navigator.platform === "MacIntel" &&
-      window.navigator.maxTouchPoints > 1);
-  const isAndroid = /Android/i.test(userAgent);
-
-  if (isIOS) {
-    return APP_STORE_URL;
-  }
-
-  if (isAndroid) {
-    return GOOGLE_PLAY_URL;
-  }
-
-  return "#download";
-}
 
 const features = [
   {
@@ -251,58 +233,9 @@ function FaqItem({ q, a, defaultOpen = false }: { q: string; a: string; defaultO
 }
 
 export default function Home() {
-  const handleGetAppClick = () => {
-    posthog.capture("click_get_app");
-    const storeUrl = getDeviceStoreUrl();
-
-    if (storeUrl.startsWith("#")) {
-      document.querySelector(storeUrl)?.scrollIntoView({ behavior: "smooth" });
-      return;
-    }
-
-    window.location.href = storeUrl;
-  };
-
   return (
     <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
-      {/* Sticky Header */}
-      <header className="sticky top-0 z-40 border-b border-[var(--border)]/60 bg-[var(--background)]/80 backdrop-blur-md">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
-          <a href="#top" className="flex items-center gap-3">
-            <Image
-              src="/app-icon.png"
-              alt="Qiyam"
-              width={36}
-              height={36}
-              className="rounded-[8px]"
-            />
-            <span className="text-lg font-semibold tracking-tight">Qiyam</span>
-          </a>
-
-          <nav className="hidden md:flex items-center gap-8 text-sm text-[var(--muted-foreground)]">
-            <a href="#features" className="hover:text-[var(--foreground)] transition-colors">
-              Features
-            </a>
-            <a href="#how-it-works" className="hover:text-[var(--foreground)] transition-colors">
-              How it works
-            </a>
-            <a href="#screenshots" className="hover:text-[var(--foreground)] transition-colors">
-              Screenshots
-            </a>
-            <a href="#faq" className="hover:text-[var(--foreground)] transition-colors">
-              FAQ
-            </a>
-          </nav>
-
-          <button
-            type="button"
-            onClick={handleGetAppClick}
-            className="inline-flex items-center gap-2 rounded-full bg-[var(--primary)] px-4 py-2 text-sm font-medium text-[var(--primary-foreground)] shadow-sm transition-transform hover:scale-[1.03]"
-          >
-            Get the app
-          </button>
-        </div>
-      </header>
+      <SiteHeader />
 
       <main id="top">
         {/* Hero */}

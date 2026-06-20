@@ -155,7 +155,7 @@ export default function RootLayout({
                   </ul>
                 </div>
 
-                <div>
+                {/* <div>
                   <h4 className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--muted-foreground)]">
                     Built with
                   </h4>
@@ -174,7 +174,7 @@ export default function RootLayout({
                       className="h-auto w-auto max-w-[140px]"
                     />
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
 
