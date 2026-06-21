@@ -1,5 +1,7 @@
 export interface BlogCategory {
+  category_id: number;
   category: string;
+  category_name: string;
   blog_count: number;
 }
 
@@ -7,8 +9,10 @@ export interface BlogSummary {
   id: number;
   title: string;
   slug: string;
-  excerpt: string;
+  excerpt: string | null;
+  category_id: number;
   category: string;
+  category_name: string;
   cover_image_url: string;
   published_at: string;
 }
@@ -179,14 +183,6 @@ export async function getBlogBySlug(slug: string) {
     `/blogs/${encodeURIComponent(slug)}`,
   );
   return normalizeBlogSummary(article);
-}
-
-export function formatBlogCategory(value: string) {
-  return value
-    .split("_")
-    .filter(Boolean)
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
 }
 
 export function formatBlogDate(value: string) {

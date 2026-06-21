@@ -8,7 +8,6 @@ import SiteHeader from "@/components/SiteHeader";
 import BlogCoverImage from "@/components/blogs/BlogCoverImage";
 import {
   BlogApiError,
-  formatBlogCategory,
   formatBlogDate,
   getBlogBySlug,
 } from "@/lib/blogs";
@@ -76,7 +75,7 @@ export async function generateMetadata({
 
   try {
     const article = await getBlogBySlug(slug);
-    const description = article.meta_description || article.excerpt;
+    const description = article.meta_description || article.excerpt || undefined;
 
     return {
       title: `${article.meta_title || article.title} | Qiyam`,
@@ -142,14 +141,16 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
                 href={`/blogs?category=${encodeURIComponent(article.category)}`}
                 className="mt-9 block w-fit text-xs font-semibold uppercase tracking-[0.18em] text-[var(--primary)] hover:underline"
               >
-                {formatBlogCategory(article.category)}
+                {article.category_name}
               </Link>
               <h1 className="mt-4 text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
                 {article.title}
               </h1>
-              <p className="mt-5 max-w-3xl text-lg leading-relaxed text-[var(--muted-foreground)] sm:text-xl">
-                {article.excerpt}
-              </p>
+              {article.excerpt && (
+                <p className="mt-5 max-w-3xl text-lg leading-relaxed text-[var(--muted-foreground)] sm:text-xl">
+                  {article.excerpt}
+                </p>
+              )}
 
               <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-[var(--muted-foreground)]">
                 <time dateTime={article.published_at} className="inline-flex items-center gap-2">

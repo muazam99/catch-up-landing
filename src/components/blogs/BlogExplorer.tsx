@@ -15,7 +15,6 @@ import {
   BlogListResponse,
   BlogPagination,
   BlogSummary,
-  formatBlogCategory,
   formatBlogDate,
 } from "@/lib/blogs";
 import BlogCoverImage from "./BlogCoverImage";
@@ -106,10 +105,10 @@ function BlogRow({ post }: { post: BlogSummary }) {
 
       <div className="flex min-w-0 flex-col p-6 sm:p-7">
         <Link
-          href={`/blogs?category=${encodeURIComponent(post.category)}`}
+        href={`/blogs?category=${encodeURIComponent(post.category)}`}
           className="w-fit text-xs font-semibold uppercase tracking-[0.16em] text-[var(--primary)] hover:underline"
         >
-          {formatBlogCategory(post.category)}
+          {post.category_name}
         </Link>
 
         <h2 className="mt-3 text-xl font-bold leading-snug tracking-tight sm:text-2xl">
@@ -118,9 +117,11 @@ function BlogRow({ post }: { post: BlogSummary }) {
           </Link>
         </h2>
 
-        <p className="mt-3 line-clamp-2 leading-relaxed text-[var(--muted-foreground)]">
-          {post.excerpt}
-        </p>
+        {post.excerpt && (
+          <p className="mt-3 line-clamp-2 leading-relaxed text-[var(--muted-foreground)]">
+            {post.excerpt}
+          </p>
+        )}
 
         <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-[var(--muted-foreground)]">
           <time dateTime={post.published_at} className="inline-flex items-center gap-1.5">
@@ -263,7 +264,9 @@ export default function BlogExplorer({
   );
   const categoryOptions: BlogCategory[] = [
     {
+      category_id: 0,
       category: "",
+      category_name: "All",
       blog_count:
         allBlogCount || (selectedCategory === "" ? pagination.total_count : 0),
     },
@@ -282,7 +285,7 @@ export default function BlogExplorer({
 
             return (
               <button
-                key={category.category || "all"}
+                key={category.category_id || "all"}
                 type="button"
                 onClick={() => loadCategory(category.category)}
                 disabled={loading && selected}
@@ -293,7 +296,7 @@ export default function BlogExplorer({
                     : "border-[var(--border)] bg-[var(--card)] text-[var(--muted-foreground)] hover:bg-[var(--muted)] hover:text-[var(--foreground)]"
                 }`}
               >
-                <span>{category.category ? formatBlogCategory(category.category) : "All"}</span>
+                <span>{category.category_name}</span>
                 <span className="ml-2 text-xs opacity-70">{category.blog_count}</span>
               </button>
             );
